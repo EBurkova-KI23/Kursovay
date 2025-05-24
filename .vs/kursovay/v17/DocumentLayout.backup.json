@@ -1,0 +1,179 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\\u0418\u041A\u0418\u0422\\\u0422\u0422\u041F\\kursovay\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0418\u041A\u0418\u0422\\\u0422\u0422\u041F\\kursovay\\plant-website\\src\\app\\plant-detail\\plant-detail.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:plant-website\\src\\app\\plant-detail\\plant-detail.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0418\u041A\u0418\u0422\\\u0422\u0422\u041F\\kursovay\\plant-website\\src\\app\\types.ts||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:plant-website\\src\\app\\types.ts||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0418\u041A\u0418\u0422\\\u0422\u0422\u041F\\kursovay\\plant-website\\src\\app\\services\\plant.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:plant-website\\src\\app\\services\\plant.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0418\u041A\u0418\u0422\\\u0422\u0422\u041F\\kursovay\\plant-website\\server\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:plant-website\\server\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0418\u041A\u0418\u0422\\\u0422\u0422\u041F\\kursovay\\plant-website\\src\\app\\header.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:plant-website\\src\\app\\header.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0418\u041A\u0418\u0422\\\u0422\u0422\u041F\\kursovay\\plant-website\\src\\app\\home\\home.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:plant-website\\src\\app\\home\\home.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0418\u041A\u0418\u0422\\\u0422\u0422\u041F\\kursovay\\plant-website\\src\\app\\plant-list\\plant-list.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:plant-website\\src\\app\\plant-list\\plant-list.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0418\u041A\u0418\u0422\\\u0422\u0422\u041F\\kursovay\\plant-website\\src\\app\\app.routes.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:plant-website\\src\\app\\app.routes.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0418\u041A\u0418\u0422\\\u0422\u0422\u041F\\kursovay\\plant-website\\server\\database.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:plant-website\\server\\database.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "types.ts",
+              "DocumentMoniker": "D:\\\u0418\u041A\u0418\u0422\\\u0422\u0422\u041F\\kursovay\\plant-website\\src\\app\\types.ts",
+              "RelativeDocumentMoniker": "plant-website\\src\\app\\types.ts",
+              "ToolTip": "D:\\\u0418\u041A\u0418\u0422\\\u0422\u0422\u041F\\kursovay\\plant-website\\src\\app\\types.ts",
+              "RelativeToolTip": "plant-website\\src\\app\\types.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-05-08T04:09:22.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "header.component.ts",
+              "DocumentMoniker": "D:\\\u0418\u041A\u0418\u0422\\\u0422\u0422\u041F\\kursovay\\plant-website\\src\\app\\header.component.ts",
+              "RelativeDocumentMoniker": "plant-website\\src\\app\\header.component.ts",
+              "ToolTip": "D:\\\u0418\u041A\u0418\u0422\\\u0422\u0422\u041F\\kursovay\\plant-website\\src\\app\\header.component.ts",
+              "RelativeToolTip": "plant-website\\src\\app\\header.component.ts",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-05-07T17:11:43.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "plant.service.ts",
+              "DocumentMoniker": "D:\\\u0418\u041A\u0418\u0422\\\u0422\u0422\u041F\\kursovay\\plant-website\\src\\app\\services\\plant.service.ts",
+              "RelativeDocumentMoniker": "plant-website\\src\\app\\services\\plant.service.ts",
+              "ToolTip": "D:\\\u0418\u041A\u0418\u0422\\\u0422\u0422\u041F\\kursovay\\plant-website\\src\\app\\services\\plant.service.ts",
+              "RelativeToolTip": "plant-website\\src\\app\\services\\plant.service.ts",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-05-06T12:56:01.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "database.js",
+              "DocumentMoniker": "D:\\\u0418\u041A\u0418\u0422\\\u0422\u0422\u041F\\kursovay\\plant-website\\server\\database.js",
+              "RelativeDocumentMoniker": "plant-website\\server\\database.js",
+              "ToolTip": "D:\\\u0418\u041A\u0418\u0422\\\u0422\u0422\u041F\\kursovay\\plant-website\\server\\database.js",
+              "RelativeToolTip": "plant-website\\server\\database.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-07T15:13:12.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "app.routes.ts",
+              "DocumentMoniker": "D:\\\u0418\u041A\u0418\u0422\\\u0422\u0422\u041F\\kursovay\\plant-website\\src\\app\\app.routes.ts",
+              "RelativeDocumentMoniker": "plant-website\\src\\app\\app.routes.ts",
+              "ToolTip": "D:\\\u0418\u041A\u0418\u0422\\\u0422\u0422\u041F\\kursovay\\plant-website\\src\\app\\app.routes.ts",
+              "RelativeToolTip": "plant-website\\src\\app\\app.routes.ts",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvxAAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-05-06T14:20:46.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "server.js",
+              "DocumentMoniker": "D:\\\u0418\u041A\u0418\u0422\\\u0422\u0422\u041F\\kursovay\\plant-website\\server\\server.js",
+              "RelativeDocumentMoniker": "plant-website\\server\\server.js",
+              "ToolTip": "D:\\\u0418\u041A\u0418\u0422\\\u0422\u0422\u041F\\kursovay\\plant-website\\server\\server.js",
+              "RelativeToolTip": "plant-website\\server\\server.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHIAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-06T12:55:07.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "plant-detail.component.ts",
+              "DocumentMoniker": "D:\\\u0418\u041A\u0418\u0422\\\u0422\u0422\u041F\\kursovay\\plant-website\\src\\app\\plant-detail\\plant-detail.component.ts",
+              "RelativeDocumentMoniker": "plant-website\\src\\app\\plant-detail\\plant-detail.component.ts",
+              "ToolTip": "D:\\\u0418\u041A\u0418\u0422\\\u0422\u0422\u041F\\kursovay\\plant-website\\src\\app\\plant-detail\\plant-detail.component.ts",
+              "RelativeToolTip": "plant-website\\src\\app\\plant-detail\\plant-detail.component.ts",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACMAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-05-06T12:30:50.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "plant-list.component.ts",
+              "DocumentMoniker": "D:\\\u0418\u041A\u0418\u0422\\\u0422\u0422\u041F\\kursovay\\plant-website\\src\\app\\plant-list\\plant-list.component.ts",
+              "RelativeDocumentMoniker": "plant-website\\src\\app\\plant-list\\plant-list.component.ts",
+              "ToolTip": "D:\\\u0418\u041A\u0418\u0422\\\u0422\u0422\u041F\\kursovay\\plant-website\\src\\app\\plant-list\\plant-list.component.ts",
+              "RelativeToolTip": "plant-website\\src\\app\\plant-list\\plant-list.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAL0AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-05-06T12:57:54.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "home.component.ts",
+              "DocumentMoniker": "D:\\\u0418\u041A\u0418\u0422\\\u0422\u0422\u041F\\kursovay\\plant-website\\src\\app\\home\\home.component.ts",
+              "RelativeDocumentMoniker": "plant-website\\src\\app\\home\\home.component.ts",
+              "ToolTip": "D:\\\u0418\u041A\u0418\u0422\\\u0422\u0422\u041F\\kursovay\\plant-website\\src\\app\\home\\home.component.ts",
+              "RelativeToolTip": "plant-website\\src\\app\\home\\home.component.ts",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAAAKMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-05-06T12:30:12.455Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:17:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
