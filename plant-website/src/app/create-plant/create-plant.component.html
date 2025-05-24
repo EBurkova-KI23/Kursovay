@@ -1,0 +1,213 @@
+<div class="create-plant-container">
+  <h1 class="page-title">Добавление нового растения</h1>
+
+  @if (successMessage) {
+  <div class="success-message">
+    {{ successMessage }}
+    <button (click)="resetForm()" class="btn-add-more">Добавить еще растение</button>
+    <button (click)="navigateToHome()" class="btn-go-home">Вернуться на главную</button>
+  </div>
+  }
+
+  @if (errorMessage) {
+  <div class="error-message">
+    {{ errorMessage }}
+  </div>
+  }
+
+  @if (!successMessage) {
+  <form [formGroup]="plantForm" (ngSubmit)="onSubmit()" class="plant-form">
+    <!-- Основная информация о растении -->
+    <div class="form-section">
+      <h2 class="section-title">Основная информация</h2>
+
+      <div class="form-group">
+        <label for="name">Название растения *</label>
+        <input type="text"
+               id="name"
+               formControlName="name"
+               class="form-control"
+               [class.invalid]="isInvalid('name')">
+        @if (isInvalid('name')) {
+        <div class="error-hint">
+          Пожалуйста, укажите название растения
+        </div>
+        }
+      </div>
+
+      <div class="form-group">
+        <label for="category_id">Категория *</label>
+        <select id="category_id"
+                formControlName="category_id"
+                class="form-control"
+                [class.invalid]="isInvalid('category_id')">
+          <option value="">Выберите категорию</option>
+          @for (category of categories; track category.id) {
+          <option [value]="category.id">{{ category.name }}</option>
+          }
+        </select>
+        @if (isInvalid('category_id')) {
+        <div class="error-hint">
+          Пожалуйста, выберите категорию
+        </div>
+        }
+      </div>
+
+      <div class="form-group">
+        <label for="description">Описание *</label>
+        <textarea id="description"
+                  formControlName="description"
+                  class="form-control text-area"
+                  [class.invalid]="isInvalid('description')"
+                  rows="5"></textarea>
+        @if (isInvalid('description')) {
+        <div class="error-hint">
+          Пожалуйста, добавьте описание растения
+        </div>
+        }
+      </div>
+
+      <div class="form-group">
+        <label for="image">URL изображения</label>
+        <input type="url"
+               id="image"
+               formControlName="image"
+               class="form-control"
+               [class.invalid]="isInvalid('image')"
+               placeholder="https://example.com/image.jpg">
+        @if (isInvalid('image')) {
+        <div class="error-hint">
+          Пожалуйста, укажите корректный URL изображения
+        </div>
+        }
+      </div>
+
+      @if (plantForm.get('image')?.value) {
+      <div class="image-preview">
+        <img [src]="plantForm.get('image')?.value" alt="Предпросмотр" class="preview-img">
+      </div>
+      }
+    </div>
+
+    <!-- Информация по уходу -->
+    <div class="form-section">
+      <h2 class="section-title">Информация по уходу</h2>
+
+      <div class="form-group">
+        <label for="care_info">Инструкции по уходу *</label>
+        <textarea id="care_info"
+                  formControlName="care_info"
+                  class="form-control text-area"
+                  [class.invalid]="isInvalid('care_info')"
+                  rows="4"></textarea>
+        @if (isInvalid('care_info')) {
+        <div class="error-hint">
+          Пожалуйста, добавьте инструкции по уходу
+        </div>
+        }
+      </div>
+
+      <div class="form-group">
+        <label for="lighting">Освещение</label>
+        <input type="text"
+               id="lighting"
+               formControlName="lighting"
+               class="form-control"
+               placeholder="Например: Яркое рассеянное освещение">
+      </div>
+
+      <div class="form-group">
+        <label for="watering">Полив</label>
+        <input type="text"
+               id="watering"
+               formControlName="watering"
+               class="form-control"
+               placeholder="Например: Умеренный, по мере подсыхания почвы">
+      </div>
+
+      <div class="form-group">
+        <label for="temperature">Температура</label>
+        <input type="text"
+               id="temperature"
+               formControlName="temperature"
+               class="form-control"
+               placeholder="Например: 18-24°C">
+      </div>
+    </div>
+
+    <!-- Особенности растения -->
+    <div class="form-section">
+      <h2 class="section-title">Особенности растения</h2>
+
+      <div class="form-group">
+        <label for="growth_info">Особенности роста *</label>
+        <textarea id="growth_info"
+                  formControlName="growth_info"
+                  class="form-control text-area"
+                  [class.invalid]="isInvalid('growth_info')"
+                  rows="4"></textarea>
+        @if (isInvalid('growth_info')) {
+        <div class="error-hint">
+          Пожалуйста, укажите особенности роста
+        </div>
+        }
+      </div>
+
+      <div class="form-group">
+        <label for="zona">Зона</label>
+        <input type="text"
+               id="zona"
+               formControlName="zona"
+               class="form-control"
+               placeholder="Например: 9-11">
+      </div>
+
+      <div class="form-group">
+        <label for="tolerance">Приспосабливаемость</label>
+        <input type="text"
+               id="tolerance"
+               formControlName="tolerance"
+               class="form-control"
+               placeholder="Например: Высокая">
+      </div>
+
+      <div class="form-group">
+        <label for="soil">Почва</label>
+        <input type="text"
+               id="soil"
+               formControlName="soil"
+               class="form-control"
+               placeholder="Например: Хорошо дренированная, рыхлая"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="durability">Устойчивость</label>
+              <input 
+                type="text"
+                id="durability"
+                formControlName="durability"
+                class="form-control"
+                placeholder="Например: Устойчиво к засухе"
+              >
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="btn-cancel" (click)="navigateToHome()">
+              Отмена
+            </button>
+            <button type="submit" class="btn-submit" [disabled]="isSubmitting">
+              @if (!isSubmitting) {
+                <span>Добавить растение</span>
+              } @else {
+                <span class="loading-spinner">
+                  <span class="spinner-icon"></span>
+                  Сохранение...
+                </span>
+              }
+            </button>
+          </div>
+        </form>
+      }
+    </div>

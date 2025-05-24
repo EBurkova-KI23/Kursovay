@@ -1,0 +1,14 @@
+.main-content {
+  min-height: calc(100vh - 150px);
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #e5f9e0;
+  margin-top: 90px;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #BDECB6;
+  color: #4aa14d;
+}

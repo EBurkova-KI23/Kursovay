@@ -1,0 +1,45 @@
+<div class="error-container">
+  <h1>Сообщить об ошибке</h1>
+
+  @if (successMessage) {
+  <div class="success-message">
+    {{ successMessage }}
+    <div class="action-buttons">
+      <button (click)="resetForm()" class="btn-retry">Отправить ещё</button>
+      <button (click)="goHome()" class="btn-home">На главную</button>
+    </div>
+  </div>
+  } @else {
+  <div class="error-form">
+    <p class="form-description">
+      Если вы обнаружили ошибку в работе сайта, пожалуйста, опишите её ниже.
+      Мы рассмотрим ваше сообщение и исправим проблему.
+    </p>
+
+    <div class="form-group">
+      <textarea [(ngModel)]="errorMessage"
+                placeholder="Опишите, что пошло не так..."
+                rows="5"
+                [class.invalid]="showError"
+                (input)="onInputChange()"></textarea>
+      @if (showError) {
+      <div class="error-hint">Пожалуйста, опишите проблему</div>
+      }
+    </div>
+
+    <div class="form-actions">
+      <button (click)="goBack()" class="btn-back">Назад</button>
+      <button (click)="submitError()"
+              class="btn-submit"
+              [disabled]="isSubmitting">
+        @if (isSubmitting) {
+        <span class="spinner"></span>
+        Отправка...
+        } @else {
+        Отправить
+        }
+      </button>
+    </div>
+  </div>
+  }
+</div>

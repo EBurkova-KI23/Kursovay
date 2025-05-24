@@ -1,0 +1,266 @@
+.plant-detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  background-color: #27ae60;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+  .back-button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+  }
+
+  .back-button:active {
+    background-color: #2980b9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+  }
+.plant-content {
+  display: flex;
+  gap: 40px;
+  min-height: 600px;
+}
+
+.plant-image-section {
+  flex: 2;
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+}
+
+.plant-info-section {
+  flex: 3;
+}
+
+.info-block {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 25px;
+  height: 90%;
+  margin-bottom: 10px;
+}
+
+.plant-image {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.plant-header {
+  margin-bottom: 30px;
+}
+
+  .plant-header h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+
+.category-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: #e9ecef;
+  border-radius: 20px;
+  font-size: 0.9em;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+  .tabs button {
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #6c757d;
+    position: relative;
+    transition: color 0.3s;
+  }
+
+    .tabs button.active {
+      color: #28a745;
+    }
+
+      .tabs button.active::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #28a745;
+      }
+
+.tab-content {
+  padding: 20px 0;
+}
+
+.tab-pane {
+  animation: fadeIn 0.3s ease-in;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.info-card {
+  width: 94%;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+  .info-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+.description {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #6c757d;
+}
+
+.care-item, .feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.care-icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.2em;
+  color: #495057;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #6c757d;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.loading-indicator {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2em;
+  color: #6c757d;
+}
+
+.error-message {
+  text-align: center;
+  padding: 40px;
+  color: #dc3545;
+}
+
+  .error-message button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+    .error-message button:hover {
+      background-color: #c82333;
+    }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 992px) {
+  .plant-content {
+    flex-direction: column;
+  }
+
+  .plant-image-section {
+    position: static;
+    margin-bottom: 30px;
+  }
+
+  .plant-image {
+    max-height: 400px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .plant-header h1 {
+    font-size: 2em;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+  }
+
+    .tabs button {
+      flex: 1;
+      min-width: 120px;
+      font-size: 1em;
+      padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+  .plant-detail-container {
+    padding: 10px;
+  }
+
+  .info-block {
+    padding: 15px;
+  }
+
+  .plant-header h1 {
+    font-size: 1.8em;
+  }
+
+  .tabs button {
+    padding: 6px 12px;
+    font-size: 0.9em;
+  }
+
+  .info-card {
+    padding: 15px;
+  }
+}

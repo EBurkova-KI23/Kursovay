@@ -1,0 +1,33 @@
+<div class="login-container">
+  <h2>Вход в систему</h2>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email"
+           id="email"
+           [(ngModel)]="email"
+           placeholder="Введите email"
+           required />
+  </div>
+
+  <div class="form-group">
+    <label for="password">Пароль</label>
+    <input type="password"
+           id="password"
+           [(ngModel)]="password"
+           placeholder="Введите пароль"
+           required />
+  </div>
+
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+
+  <button (click)="onLogin()" [disabled]="isLoading">
+    {{ isLoading ? 'Вход...' : 'Войти' }}
+  </button>
+
+  <p class="register-link">
+    Еще нет аккаунта? <a routerLink="/register">Зарегистрироваться</a>
+  </p>
+</div>

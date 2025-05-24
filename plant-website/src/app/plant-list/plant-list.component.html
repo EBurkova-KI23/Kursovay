@@ -1,0 +1,46 @@
+<div class="plant-list-container">
+  @if (loading) {
+  <div class="loading-spinner">
+    <span>Загрузка...</span>
+  </div>
+  }
+
+  @if (error) {
+  <div class="error-message">
+    {{ error }}
+    <button (click)="retryLoading()">Попробовать снова</button>
+  </div>
+  }
+
+  @if (!loading && !error) {
+  <div class="list-header">
+    <button class="back-button" (click)="goBack()">← Назад</button>
+    @if (currentCategory) {
+    <div class="category-header">
+      <h1>{{ currentCategory.name }}</h1>
+    </div>
+    }
+  </div>
+
+  <div class="plants-grid">
+    @if (plants.length === 0) {
+    <div class="no-plants-message">
+      <p>В этой категории пока нет растений</p>
+    </div>
+    }
+
+    @for (plant of plants; track plant.id) {
+    <div class="plant-card" (click)="navigateToPlantDetail(plant.id)">
+      <div class="plant-image">
+        <img [src]="plant.image || 'assets/images/placeholder.jpg'"
+             [alt]="plant.name"
+             (error)="handleImageError($event)">
+      </div>
+      <div class="plant-info">
+        <h3>{{ plant.name }}</h3>
+      </div>
+    </div>
+    }
+  </div>
+  }
+</div>

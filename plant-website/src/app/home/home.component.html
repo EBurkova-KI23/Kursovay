@@ -1,0 +1,43 @@
+<div class="home-container">
+  <header class="page-header">
+    <h1>Энциклопедия растений</h1>
+    <p class="subtitle">Выберите категорию растений</p>
+  </header>
+
+  <div *ngIf="loading" class="loading-indicator">
+    <p>Загрузка категорий...</p>
+  </div>
+
+  <div *ngIf="error" class="error-message">
+    <p>{{ error }}</p>
+    <button (click)="loadCategories()">Попробовать снова</button>
+  </div>
+
+  <div *ngIf="!loading && !error" class="categories-grid">
+    <div *ngFor="let category of categories"
+         class="category-card"
+         (click)="navigateToPlantsList(category.id)">
+      <div class="category-image">
+        <img [src]="category.image" [alt]="category.name">
+      </div>
+      <div class="category-info">
+        <h2>{{ category.name }}</h2>
+        <p>{{ category.description }}</p>
+      </div>
+      <div class="arrow-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 18l6-6-6-6" />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Блок с интересными фактами о растениях Сибири -->
+  <section class="facts-section">
+    <h2>Интересные факты о растениях Сибири</h2>
+    <div class="fact-content">
+      <p>{{ currentFact }}</p>
+    </div>
+    <button class="fact-button" (click)="showNextFact()">Узнать другой факт</button>
+  </section>
+</div>

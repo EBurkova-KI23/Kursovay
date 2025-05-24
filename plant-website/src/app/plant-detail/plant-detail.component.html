@@ -1,0 +1,118 @@
+<div class="plant-detail-container">
+  <button class="back-button" (click)="goBack()">← Назад</button>
+
+  <div *ngIf="loading" class="loading-indicator">
+    <p>Загрузка информации о растении...</p>
+  </div>
+
+  <div *ngIf="error" class="error-message">
+    <p>{{ error }}</p>
+    <button (click)="retryLoad()">Попробовать снова</button>
+  </div>
+
+  <div *ngIf="plant && !loading && !error" class="plant-content">
+    <!-- Левая часть с изображением -->
+    <div class="plant-image-section">
+      <img [src]="plant.image" [alt]="plant.name" class="plant-image">
+    </div>
+
+    <!-- Правая часть с информацией -->
+    <div class="plant-info-section">
+      <div class="info-block">
+        <div class="plant-header">
+          <h1>{{ plant.name }}</h1>
+        </div>
+
+        <div class="tabs">
+          <button [class.active]="activeTab === 'description'"
+                  (click)="activeTab = 'description'">
+            Описание
+          </button>
+          <button [class.active]="activeTab === 'care'"
+                  (click)="activeTab = 'care'">
+            Уход
+          </button>
+          <button [class.active]="activeTab === 'features'"
+                  (click)="activeTab = 'features'">
+            Особенности
+          </button>
+        </div>
+
+        <div class="tab-content">
+          <!-- Вкладка описания -->
+          <div *ngIf="activeTab === 'description'" class="tab-pane">
+            <div class="info-card">
+              <p class="description">{{ plant.description }}</p>
+            </div>
+          </div>
+
+          <!-- Вкладка ухода -->
+          <div *ngIf="activeTab === 'care'" class="tab-pane">
+            <div class="info-card">
+              <p>{{ plant.care_info }}</p>
+            </div>
+
+            <div class="info-card">
+              <div class="care-item">
+                <div class="care-icon">💧</div>
+                <h3>Полив</h3>
+                <p>{{ plant.watering }}</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="care-item">
+                <div class="care-icon">☀️</div>
+                <h3>Освещение</h3>
+                <p>{{ plant.lighting }}</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="care-item">
+                <div class="care-icon">🌡️</div>
+                <h3>Температура</h3>
+                <p>{{ plant.temperature }}</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Вкладка особенностей -->
+          <div *ngIf="activeTab === 'features'" class="tab-pane">
+            <div class="info-card">
+              <p>{{ plant.growth_info }}</p>
+            </div>
+
+            <div class="info-card">
+              <div class="feature-item">
+                <h3>Зона</h3>
+                <p>{{ plant.zona || 'Информация отсутствует' }}</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="feature-item">
+                <h3>Приспосабливаемость</h3>
+                <p>{{ plant.tolerance || 'Информация отсутствует'}}</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="feature-item">
+                <h3>Устойчивость</h3>
+                <p>{{ plant.durability || 'Информация отсутствует' }}</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="feature-item">
+                <h3>Почва</h3>
+                <p>{{ plant.soil|| 'Информация отсутствует' }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

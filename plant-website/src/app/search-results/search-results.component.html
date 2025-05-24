@@ -1,0 +1,47 @@
+<div class="results-container">
+  <h2 class="search-title">
+    @if (searchQuery) {
+    Результаты поиска для "{{ searchQuery }}"
+    }
+  </h2>
+
+  @if (loading) {
+  <div class="loading">
+    <div class="spinner"></div>
+    <p>Загрузка результатов...</p>
+  </div>
+  }
+
+  @if (error) {
+  <div class="error">
+    <p>{{ error }}</p>
+    <button (click)="searchPlants()" class="retry-button">
+      Попробовать снова
+    </button>
+  </div>
+  }
+
+  @if (!loading && !error) {
+  @if (plants.length === 0) {
+  <div class="no-results">
+    <p>По вашему запросу ничего не найдено</p>
+  </div>
+  } @else {
+  <div class="plants-grid">
+    @for (plant of plants; track plant.id) {
+    <div class="plant-card" (click)="navigateToPlantDetail(plant.id)">
+      <div class="plant-image">
+        <img [src]="plant.image || 'assets/placeholder.jpg'"
+             [alt]="plant.name"
+             (error)="handleImageError($event)">
+      </div>
+      <div class="plant-info">
+        <h3>{{ plant.name }}</h3>
+        <p>{{ truncateDescription(plant.description, 100) }}</p>
+      </div>
+    </div>
+    }
+  </div>
+  }
+  }
+</div>
